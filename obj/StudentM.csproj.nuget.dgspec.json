@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thinksysuser\\Desktop\\New folder\\Dotnet_SampleCode\\StudentM.csproj": {}
+    "C:\\Users\\thinksysuser\\Desktop\\Dotnet_1\\StudentM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thinksysuser\\Desktop\\New folder\\Dotnet_SampleCode\\StudentM.csproj": {
+    "C:\\Users\\thinksysuser\\Desktop\\Dotnet_1\\StudentM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thinksysuser\\Desktop\\New folder\\Dotnet_SampleCode\\StudentM.csproj",
+        "projectUniqueName": "C:\\Users\\thinksysuser\\Desktop\\Dotnet_1\\StudentM.csproj",
         "projectName": "StudentM",
-        "projectPath": "C:\\Users\\thinksysuser\\Desktop\\New folder\\Dotnet_SampleCode\\StudentM.csproj",
+        "projectPath": "C:\\Users\\thinksysuser\\Desktop\\Dotnet_1\\StudentM.csproj",
         "packagesPath": "C:\\Users\\thinksysuser\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thinksysuser\\Desktop\\New folder\\Dotnet_SampleCode\\obj\\",
+        "outputPath": "C:\\Users\\thinksysuser\\Desktop\\Dotnet_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thinksysuser\\AppData\\Roaming\\NuGet\\NuGet.Config",

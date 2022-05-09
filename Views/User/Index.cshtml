@@ -1,0 +1,156 @@
+﻿@model IEnumerable<PdxUsers.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="heading">
+    <h1 >PDX Processing System</h1>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="about">About</a>
+  <a href="#" id="blog">Blog</a>
+  <a href="#" id="projects">Projects</a>
+  <a href="#" id="contact">Contact</a>
+</div>
+
+@*<p>
+  <td class="text-center">
+   <a asp-action="Create"  class="btn btn-primary"><i class="fas fa-pen"></i> Create New</a>
+                            </td>
+  </p>*@
+
+  <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create User</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        
+      </div>
+      <div class="modal-body">
+      <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">First Name:</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter First Name">
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Last Name:</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Email :</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Mobile</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mobile">
+    </div>
+    <div class="form-group">
+    <label for="exampleInputPassword1">Role</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Role">
+     </div>
+    <div class="form-group">
+    <label for="exampleInputPassword1">Last Login</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Last Login">
+  </div>
+
+ 
+  
+ 
+  
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mobile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Role)
+            </th>
+              <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+              <th>
+                @Html.DisplayNameFor(model => model.lastLogin)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mobile)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.Role)
+            </td>
+              <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+              <td>
+                @Html.DisplayFor(modelItem => item.lastLogin)
+            </td>
+            <td>
+                 @*@Html.ActionLink("Edit", "Edit", new { id=item.Id  })*@ 
+                <td class="text-center">
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary"><i class="fas fa-pen"></i> Edit</a>
+                            </td>
+                              <td class="text-center">
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary"><i class="fas fa-pen"></i> Detail</a>
+                            </td>
+                              <td class="text-center">
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-primary"><i class="fas fa-pen"></i> Delete</a>
+                            </td>
+              @*  @Html.ActionLink("Details", "Detail", new {  id=item.Id }) |*@
+            @*    @Html.ActionLink("Delete", "Delete", new {  id=item.Id  })*@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+

@@ -1,6 +1,6 @@
 using System;
 
-namespace StudentM.Models
+namespace PdxUsers.Models
 {
     public class ErrorViewModel
     {

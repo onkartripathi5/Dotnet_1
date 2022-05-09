@@ -6491,11 +6491,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thinksysuser\\Desktop\\New folder\\Dotnet_SampleCode\\StudentM.csproj",
-      "projectName": "StudentM",
-      "projectPath": "C:\\Users\\thinksysuser\\Desktop\\New folder\\Dotnet_SampleCode\\StudentM.csproj",
+      "projectUniqueName": "C:\\Users\\thinksysuser\\Desktop\\Dotnet_1\\PdxUsers.csproj",
+      "projectName": "PdxUsers",
+      "projectPath": "C:\\Users\\thinksysuser\\Desktop\\Dotnet_1\\PdxUsers.csproj",
       "packagesPath": "C:\\Users\\thinksysuser\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thinksysuser\\Desktop\\New folder\\Dotnet_SampleCode\\obj\\",
+      "outputPath": "C:\\Users\\thinksysuser\\Desktop\\Dotnet_1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thinksysuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
